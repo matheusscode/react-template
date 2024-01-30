@@ -1,0 +1,27 @@
+{
+  "name": "React Template",
+  "short_name": "RT",
+  "description": "Enter the description of the web content",
+  "start_url": "/",
+  "background_color": "#FFFFFF",
+  "theme_color": "#F8FAFD",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/public/vite-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/vite-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/public/vite.svg",
+      "sizes": "144x144",
+      "type": "image/svg+xml"
+    }
+  ]
+}
