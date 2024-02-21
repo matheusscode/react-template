@@ -1,6 +1,6 @@
 import { UIContainer } from "ui/containers";
-import Home from "ui/pages/Home";
-import PrivateRoute from "ui/pages/PrivateRoute";
+import Home from "ui/pages/home";
+import PrivateRoute from "ui/pages/private-route";
 import { RouteObject } from "react-router-dom";
 
 export const appInstance: RouteObject = {

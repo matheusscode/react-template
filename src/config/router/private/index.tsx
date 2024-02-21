@@ -1,6 +1,6 @@
 import React from "react";
 import { PathRouteProps } from "react-router-dom";
-import { useAuth } from "data/hooks/useAuth";
+import { useAuth } from "data/hooks/use-auth";
 
 interface PrivateRouteProps extends PathRouteProps {}
 

@@ -1,5 +1,5 @@
-import { IoCContext } from "data/context/IoC/IoCContext";
-import { IoCProps } from "data/context/IoC/models/IoCProps";
+import { IoCContext } from "data/context/ioc/ioc-context";
+import { IoCProps } from "data/context/ioc/models/ioc-props";
 import { useContext } from "react";
 
 export const useIoC = (): IoCProps => {

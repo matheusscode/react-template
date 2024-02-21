@@ -1,5 +1,5 @@
-import AppContainer from "./AppContainer";
-import AuthContainer from "./AuthContainer";
+import AppContainer from "./app-container";
+import AuthContainer from "./auth-container";
 
 export const UIContainer = {
   App: AppContainer,

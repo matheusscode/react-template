@@ -1,2 +1,2 @@
-export * from "./AppInstance";
-export * from "./AuthInstance";
+export * from "./app-instance";
+export * from "./auth-instance";

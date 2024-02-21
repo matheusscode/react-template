@@ -9,7 +9,7 @@ import axios from "axios";
 import Cookies from "universal-cookie";
 import jwtDecode from "jwt-decode";
 import { HttpServiceProps } from "data/ioc/modules/http/models/HttpServiceProps";
-import { useIoC } from "data/hooks/useIoC";
+import { useIoC } from "data/hooks/use-ioc";
 import appConfig from "@config/appConfig";
 import { IoCProps } from "data/ioc/models/IoCProps";
 import {
