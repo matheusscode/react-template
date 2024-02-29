@@ -8,10 +8,10 @@ import {
 import axios from "axios";
 import Cookies from "universal-cookie";
 import jwtDecode from "jwt-decode";
-import { HttpServiceProps } from "data/ioc/modules/http/models/HttpServiceProps";
+import { HttpServiceProps } from "data/ioc/modules/http/models/http-service-props";
 import { useIoC } from "data/hooks/use-ioc";
 import appConfig from "@config/app-config";
-import { IoCProps } from "data/ioc/models/IoCProps";
+import { IoCProps } from "data/ioc/models/ioc-props";
 import {
   AuthCogCookieKeys,
   AuthenticationContextData,

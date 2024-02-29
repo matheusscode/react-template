@@ -1,6 +1,6 @@
 import Axios, { AxiosError, AxiosInstance } from "axios";
 import { injectable } from "inversify";
-import { HttpServiceProps } from "../models/HttpServiceProps";
+import { HttpServiceProps } from "../models/http-service-props";
 import AppError from "../../../../utils/app-error";
 import appConfig from "../../../../../config/app-config";
 
