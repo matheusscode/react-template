@@ -1,28 +1,18 @@
-const currentDomain = window.location.hostname.replace(/^\w+\./, "");
-const cookieHost = (
-  window.location.hostname === "localhost" ? "localhost" : `.${currentDomain}`
-).replace(/\.+/g, "");
+const CURRENT_LOCATION = window.location.pathname;
+const developmentRoute = "http://172.22.1.248:8080";
+const productionRoute = "http://172.22.1.248:8080";
+const CURRENT_ROUTE =
+  CURRENT_LOCATION === "localhost" ? developmentRoute : productionRoute;
 
-const currentLocation = window.location.origin;
 const appConfig = {
   api: {
-    url: "https://api.opendota.com/api/",
+    url: CURRENT_ROUTE,
     timeout: 30000,
+    cdn: "",
   },
-  auth: {
-    url: "",
-    timeout: 30000,
-    keys: {
-      token: "Template",
-    },
-  },
-  host: cookieHost,
-  urlLogout: `url=${currentLocation}`,
-  urlLogoutDev: `url=${currentLocation}`,
   app: {
-    name: "Template",
+    name: "Vozes da Democracia - Fique por dentro de todas as nóticias.",
   },
-  cdn: "https://cdn.cloudflare.steamstatic.com/",
 };
 
 export default appConfig;

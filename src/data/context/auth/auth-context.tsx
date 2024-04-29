@@ -1,7 +1,6 @@
 import { createContext } from "react";
+import { AuthenticationProps } from "./models/auth-props";
 
-import { AuthenticationContextData } from "./models/AuthProps";
-
-export const AuthContext = createContext<AuthenticationContextData | null>(
-  null
+export const AuthContext = createContext<AuthenticationProps>(
+  {} as AuthenticationProps
 );

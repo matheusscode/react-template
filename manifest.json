@@ -1,7 +1,7 @@
 {
-  "name": "React Template",
-  "short_name": "RT",
-  "description": "Enter the description of the web content",
+  "name": "Vozes da Democracia",
+  "short_name": "VDD",
+  "description": "O Vozes da Democracia oferece as últimas notícias do Brasil e do mundo. Fique atualizado com as principais informações em política, economia, cultura e tecnologia. Explore agora!",
   "start_url": "/",
   "background_color": "#FFFFFF",
   "theme_color": "#F8FAFD",
