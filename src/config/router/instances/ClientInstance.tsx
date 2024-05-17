@@ -1,19 +1,18 @@
 import { UIContainer } from "ui/containers";
-import Home from "ui/pages/home";
-import PrivateRoute from "ui/pages/private-route";
 import { RouteObject } from "react-router-dom";
+import { ClientDashboard, ClientPlatform } from "ui/pages/client";
 
-export const appInstance: RouteObject = {
+export const clientInstance: RouteObject = {
   element: <UIContainer.App />,
   errorElement: <div>Error App</div>,
   children: [
     {
       path: "/",
-      element: <Home />,
+      element: <ClientPlatform.PlatformHome />,
     },
     {
       path: "/dashboard",
-      element: <PrivateRoute />,
+      element: <ClientDashboard.DashboardHome />,
     },
   ],
 };

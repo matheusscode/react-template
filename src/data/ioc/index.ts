@@ -1,7 +1,7 @@
 import { Container } from "inversify";
-import AxiosHttpService from "./modules/http/implementations/axios-http-service";
-import { HttpServiceProps } from "./modules/http/models/http-service-props";
-import { IoCProps } from "./models/ioc-props";
+import AxiosHttpService from "./modules/http/implementations/AxiosHttpService";
+import { HttpServiceProps } from "./modules/http/models/HttpServiceProps";
+import { IoCServiceProps } from "./models/IoCServiceProps";
 
 const appIocContainer = new Container({ defaultScope: "Singleton" });
 
@@ -12,6 +12,9 @@ function registerNewService<T>(
   appIocContainer.bind<T>(type).to(constructor);
 }
 
-registerNewService<HttpServiceProps>(IoCProps.HttpService, AxiosHttpService);
+registerNewService<HttpServiceProps>(
+  IoCServiceProps.HttpService,
+  AxiosHttpService
+);
 
 export { appIocContainer };

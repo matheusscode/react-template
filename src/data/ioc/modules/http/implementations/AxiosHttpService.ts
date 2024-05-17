@@ -1,7 +1,7 @@
 import Axios, { AxiosError, AxiosInstance } from "axios";
 import { injectable } from "inversify";
-import { HttpServiceProps } from "../models/http-service-props";
-import AppError from "../../../../utils/app-error";
+import { HttpServiceProps } from "../models/HttpServiceProps";
+import AppError from "../../../../utils/AppError";
 import appConfig from "../../../../../config/app-config";
 
 @injectable()

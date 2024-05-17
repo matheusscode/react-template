@@ -1,5 +1,5 @@
 import { appIocContainer } from "data/ioc";
-import { IoCContext } from "./ioc-context";
+import { IoCContext } from "./IoCContext";
 import { ReactNode } from "react";
 
 export default function IoCProvider({ children }: { children: ReactNode }) {

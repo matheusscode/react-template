@@ -1,5 +1,4 @@
 import { createContext } from "react";
-
-import { IoCProps } from "./models/ioc-props";
+import { IoCProps } from "./models/IoCProps";
 
 export const IoCContext = createContext<IoCProps>({} as IoCProps);

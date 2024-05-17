@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import IoCProvider from "./ioc/ioc-provider";
-import AuthProvider from "./authg/auth-provider";
+import IoCProvider from "./ioc/IocProvider";
+import AuthProvider from "./auth/AuthProvider";
 
 export default function ContextProvider({ children }: { children: ReactNode }) {
   return (
