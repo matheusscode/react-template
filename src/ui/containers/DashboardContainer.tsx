@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-export default function AppContainer() {
+export default function DashboardContainer() {
   return (
     <div>
       <Outlet />

@@ -1,8 +1,8 @@
-import { UIContainer } from "ui/containers";
+import { Container } from "ui/containers";
 import { RouteObject } from "react-router-dom";
 
 export const adminInstance: RouteObject = {
-  element: <UIContainer.App />,
+  element: <Container.Admin />,
   errorElement: <div>Error App</div>,
   children: null,
 };
