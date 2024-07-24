@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div>Welcome my Reat Template</div>;
+  return <div>Welcome my React Template</div>;
 }

@@ -2,7 +2,7 @@ import Axios, { AxiosError, AxiosInstance } from "axios";
 import { injectable } from "inversify";
 import { HttpServiceProps } from "../models/axios.service.props";
 import AppError from "../../../data/classes/app.class.error";
-import { appConfig } from "../../../config/app.config";
+import { app_config } from "../../../config/app.config";
 
 @injectable()
 export default class AxiosHttpService implements HttpServiceProps {
@@ -10,8 +10,8 @@ export default class AxiosHttpService implements HttpServiceProps {
 
   constructor() {
     this.httpInstance = Axios.create({
-      timeout: appConfig.api.timeout,
-      baseURL: appConfig.api.url,
+      timeout: app_config.api.timeout,
+      baseURL: app_config.api.url,
     });
   }
 

@@ -5,6 +5,7 @@ import { dashboardInstance } from "./instances/dashboard.instance";
 
 export const router = createBrowserRouter([
   {
+    path: "/",
     element: <LAYOUT_CONTAINER.App />,
     children: [authInstance, dashboardInstance],
   },

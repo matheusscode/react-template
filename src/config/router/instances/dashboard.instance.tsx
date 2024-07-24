@@ -7,7 +7,7 @@ export const dashboardInstance: RouteObject = {
   errorElement: <div>Error App</div>,
   children: [
     {
-      path: "/dashboard",
+      path: "/",
       element: <PLATFORM_PAGES.Home />,
     },
   ],
