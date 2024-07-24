@@ -1,10 +1,9 @@
-import AdminContainer from "./AdminContainer";
-import AuthContainer from "./AuthContainer";
-import PlatformContainer from "./PlatformContainer";
+import AppContainer from "./app.container";
+import AuthContainer from "./auth.container";
+import DashboardContainer from "./dashboard.container";
 
-export const Container = {
-  Platform: PlatformContainer,
+export const LAYOUT_CONTAINER = {
+  App: AppContainer,
   Auth: AuthContainer,
-  Dashboard: AuthContainer,
-  Admin: AdminContainer,
+  Dashboard: DashboardContainer,
 };

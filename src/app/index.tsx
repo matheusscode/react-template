@@ -1,4 +1,4 @@
-import { router } from "@config/router";
+import { router } from "@/config/router";
 import ContextProvider from "data/context";
 import { RouterProvider } from "react-router-dom";
 

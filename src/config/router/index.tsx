@@ -1,12 +1,11 @@
+import { LAYOUT_CONTAINER } from "@/container/index";
 import { createBrowserRouter } from "react-router-dom";
-import { clientInstance } from "./instances/ClientInstance";
-import { authInstance } from "./instances/AuthInstance";
-import { adminInstance } from "./instances/AdminInstance";
-import { dashboardInstance } from "./instances/DashboardInstance";
+import { authInstance } from "./instances/auth.instance";
+import { dashboardInstance } from "./instances/dashboard.instance";
 
 export const router = createBrowserRouter([
-  clientInstance,
-  authInstance,
-  adminInstance,
-  dashboardInstance,
+  {
+    element: <LAYOUT_CONTAINER.App />,
+    children: [authInstance, dashboardInstance],
+  },
 ]);
